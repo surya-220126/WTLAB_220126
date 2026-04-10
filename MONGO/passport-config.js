@@ -20,7 +20,7 @@ passport.use(new GoogleStrategy({
         
         user = new User({
             googleId: profile.id,
-            email: profile.emails[0].value,
+            email: profile.emails[0].value, 
             firstName: profile.name.givenName,
             lastName: profile.name.familyName,
             avatar: profile.photos[0].value,
