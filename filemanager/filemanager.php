@@ -16,7 +16,6 @@ function deleteFile($folder) {
         echo "<p style='color:red'>File deleted successfully!</p>";
     }
 }
-
 function listFiles($folder) {
     $files = scandir($folder);
 
